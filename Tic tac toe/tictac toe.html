@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Multiplayer Tic Tac Toe Game">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="tic.css">
+	
+	<title>Tic Tac Toe Game</title>
+</head>
+<body Class="center">
+	<h1>Tic Tac Toe Game</h1>
+		<div class="center" id="main">
+			<h4>--Play and enjoy--</h4>
+			<button onclick="start()" class="button">Start a New Game</button>
+			<br>
+			<button onclick="learn()" class="button">Learn How to play the game</button>
+			<br>
+			<button onclick="exit()" class="button">Exit</button>
+		</div>
+		
+		<div class="center" id="learn">
+			<p>
+			You are X, your friend is O.
+			<br>
+			The first player to get 4 of her marks in a row (up, down, across,
+			or diagonally) is the WINNER.
+			When all 9 squares are full, the game is over. If no player has 
+			3 marks in a row the game ends in a DRAW
+			</p>
+			<img src="tictactoerules.png" alt="Learn">
+			<br>
+			<button onclick="main()" class="button">Back</button>
+		</div>
+		
+		<div class="center" id="game">
+			<div class="center" id="text1">
+				<h3 id="textPlayer" style="font-size: 0.9rem">(Current Player 1)</h3>
+				<h3 id="textComd" style="font-size: 0.9rem">Player 2 Can play now.....</h3>
+			</div>
+			<canvas id="tic-tac-toe-board" class="center"></canvas>
+			<br>
+			
+			<button onclick="reset()" class="button">Reset</button>
+			<button onclick="main()" class="button">Back</button>
+		</div>
+		
+		<!-- SCRIPT OF GAME -->
+		<script src="tictac.js"></script>
+</body>
+</html>
